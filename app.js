@@ -1,8 +1,3 @@
-<template>
-    <div>
-        <h1> {{ title }} </h1>
-    </div>
-</template>
 export default {
     name: 'Anguiano',
     data() {
@@ -10,10 +5,9 @@ export default {
             title: "Pako Anguiano"
         };
     },
+    template: `
+        <div>
+            <h1> {{ title }} </h1>
+        </div>
+    `,
 };
-
-<style>
-    h1 {
-        
-    }
-</style>
