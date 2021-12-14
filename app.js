@@ -5,12 +5,15 @@
 </template>
 export default {
     name: 'Anguiano',
-
-    setup() {
-        const title = "Pako Anguiano";
-        
+    data() {
         return {
-            title
+            title: "Pako Anguiano"
         };
     },
 };
+
+<style>
+    h1 {
+        
+    }
+</style>
