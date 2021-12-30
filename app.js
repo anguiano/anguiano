@@ -8,16 +8,19 @@
         <nav id="menu1" role="navigation" style="overflow: hidden; padding: 0px; width: 200px;">
             <div class="jspContainer" style="width: 200px; height: 398px;">
                 <div class="jspPane" style="padding: 0px; top: 0px; width: 200px;">
-                    <template v-for="nav in navigation">
-                        <a href="`#${nav.href}`">
-                            <span id="`link_${nav.href}`" class="active"> {{ nav.label }} </span>
+                    <template v-for="menu in menus" key="menu.href">
+                        <a href="{{ menu.href }}">
+                            <span id="{{ menu.href }}" class="active"> {{ menu.label }} </span>
                         </a>
                     </template>
                 </div>
             </div>
         </nav>
         <div class="social">
-            <a href="https://www.facebook.com" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a> <a href="https://twitter.com" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a> <a href="https://plus.google.com" target="_blank" class="google-plus"><i class="fa fa-google-plus"></i></a> </div>
+            <a href="https://www.facebook.com" target="_blank" class="facebook">
+                <i class="fa fa-facebook"></i>
+            </a>
+        </div>
         <div class="copyright"> © {{ name }}.<br/>
             All Rights Reserved.
         </div>
@@ -29,7 +32,7 @@ export default {
     data() {
         return {
             name: "Francisco Anguiano",
-            navigation: [
+            menus: [
                 {href: "introduction", label: "Home"},
                 {href: "about", label: "About"},
                 {href: "skills", label: "Skills"},
