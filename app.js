@@ -16,7 +16,6 @@ export default {
         };
     },
     template: `
-    <template>
         <div id="container" class="container">    
             <div class="logo"> 
                 <img src="images/logo.png" alt="" width="140" height="140" />
@@ -43,6 +42,5 @@ export default {
                 All Rights Reserved.
             </div>
         </div>
-    </template>
     `
 };
