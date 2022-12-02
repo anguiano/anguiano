@@ -2,12 +2,7 @@
     <div class="welcome-page">
         <UnauthenticatedNavbar />
         <div class="welcome-page-content">
-            <h1 class="text-white font-mono text-2xl uppercase font-light">
-                Under construction
-            </h1>
-            <p class="text-white font-mono text-sm uppercase font-light">
-                Guanajuato, Mexico.
-            </p>
+            <UnderConstruction />
         </div>
     </div>
 </template>
@@ -15,11 +10,14 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import UnauthenticatedNavbar from "@/components/UnauthenticatedNavbar.vue";
+import UnderConstruction from "@/components/UnderConstruction.vue";
+
 
 export default defineComponent({
     name: "WelcomePage",
     components: {
         UnauthenticatedNavbar,
+        UnderConstruction,
     }
 });
 </script>

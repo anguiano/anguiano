@@ -1,6 +1,8 @@
 <template>
   <div class="app">
-    <WelcomePage />
+    <router-view v-slot="{ Component, route }">
+        <component :is="Component" :key="route.name" />
+    </router-view>
   </div>
 </template>
 

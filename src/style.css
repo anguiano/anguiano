@@ -1,8 +1,14 @@
+@import url("https://fonts.gstatic.com/s/robotocondensed/v25/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2");
+@import url("https://fonts.gstatic.com/s/opensans/v34/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-muw.woff2");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
 body {
+    @apply tracking-[2px] font-thin;
+
     background: #fff;
     font: 400 12px/1.8 "Roboto Condensed", sans-serif;
     color: #666;
