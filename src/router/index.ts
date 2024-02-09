@@ -55,7 +55,7 @@ router.beforeEach(
     from: RouteLocationNormalized,
     next: NavigationGuardNext
   ) => {
-    window.document.title = `GENCODE - ${to.meta.title}`;
+    window.document.title = `Gencode - ${to.meta.title}`;
     next();
   }
 );
